@@ -12,7 +12,7 @@ async function runExample() {
      x[5] = document.getElementById('box6').value;
      x[6] = document.getElementById('box7').value;
      x[7] = document.getElementById('box8').value;
-
+     x[8] = document.getElementById('box9').value;
 
     let tensorX = new ort.Tensor('float32', x, [1, 11] );
     let feeds = {float_input: tensorX};
