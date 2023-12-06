@@ -1,0 +1,76 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+  <script src="./index.js"></script>
+  
+  <style>
+      
+      table, th, td {
+           border: 1px solid;
+      }
+      
+      #leftbox {
+                float:left; 
+                width:33%;
+                height:300px;
+      }
+      #middlebox{
+                float:left; 
+                width:33%;
+                height:300px;
+        }
+        #rightbox{
+                float:right;
+                width:33%;
+                height:300px;
+        }
+        h1{
+                color:green;
+                text-align:center;
+        }
+     
+     
+      
+  </style>
+</head>
+<body>
+  
+  <h1> Wine Quality XGBoost </h1>
+  
+  
+  
+  
+    <div id = "boxes1">
+         
+              
+  <input type="text" id="box1" value="38"> longitude <br/>
+  <input type="text" id="box2" value="0"> latitude <br/>
+  <input type="text" id="box3" value="300"> housing_median_age  <br/>
+  <input type="text" id="box4" value="27">total_rooms <br/>
+  <input type="text" id="box5" value="7" >total_bedrooms <br/>
+  <input type="text" id="box6" value="87618"> population <br/>
+  <input type="text" id="box7" value="0"> households <br/>
+  <input type="text" id="box8" value="300"> median_income  <br/>
+
+
+    </div> 
+      
+  <div>
+      <input style="background-color:yellow" type="button" value="Run" onclick="runExample()"/>
+   </div>
+  
+
+        <div id = "boxes2">
+              
+           
+              <h2>Inference </h2>
+              
+               <div id="predictions">
+               </div>
+              
+
+        </div>
+  
+
+</body>
+</html>
