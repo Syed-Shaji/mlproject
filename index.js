@@ -29,7 +29,7 @@ async function runExample() {
   predictions.innerHTML = ` <hr> Got an output tensor with values: <br/>
    <table>
      <tr>
-       <td>  Rating of Wine Quality  </td>
+       <td>  House price prediction in CaLIFORNIA  </td>
        <td id="td0">  ${outputData}  </td>
      </tr>
   </table>`;
